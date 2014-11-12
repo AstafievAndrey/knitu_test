@@ -25,7 +25,7 @@ class Db{
     }
     function ratingDiag(){
         $this->_db->exec('SET NAMES utf8');
-        $sql="SELECT rating,count(rating) as Count FROM Users GROUP BY rating";
+        $sql="SELECT rating,count(rating) as count FROM Users GROUP BY rating";
         $sth=$this->_db->query($sql);
         $result = $sth->fetchall();
         return $result;

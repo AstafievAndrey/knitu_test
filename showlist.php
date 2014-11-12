@@ -3,7 +3,11 @@ require 'class.php';
 $sh=Db::getInstance();
 $users=$sh->showList();
 $rating=$sh->ratingDiag();
-print_r($rating);
+$k=0;
+foreach ($rating as $value) {
+    $k=$k+$value['count'];
+    echo "  ".$value[0];
+}
 ?>
 <html>
     <head>
@@ -32,7 +36,7 @@ print_r($rating);
             </table>
         </div>
         <div>
-            <img src="graphics/circle.php?param=hi">
+            <?php echo "<img src='graphics/circle.php?k=$k&mas=".serialize($rating)."'>";?>
         </div> 
         
     </body>
