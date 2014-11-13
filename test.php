@@ -8,7 +8,7 @@ Db::rightAutorize();
     <head>
         <meta charset="UTF-8">
         <title>Test</title>
-        <link href="dist/css/bootstrap.css" rel="stylesheet">
+        <link href="css/dist/css/bootstrap.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">

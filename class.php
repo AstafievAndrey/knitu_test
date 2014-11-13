@@ -32,6 +32,7 @@ class Db{
         
     }
     function saveRating($login,$rating){
+        if ($rating==1) $rating=2;
         $sql="UPDATE Users SET rating=$rating WHERE login='$login'";
         $this->_db->exec($sql);
     }

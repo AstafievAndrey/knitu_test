@@ -9,7 +9,7 @@ if (isset($_POST['question']) && isset($_POST['type'])&& isset($_POST['answer'])
     }else{
         $rat->saveRating($_SESSION['user'],$_SESSION['rating']);
         $_SESSION=array();
-        header('location:showlist.php');
+        header('location:index.php');
     }
 }
 
