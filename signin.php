@@ -5,8 +5,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Тест</title>
         <link href="css/dist/css/bootstrap.css" rel="stylesheet">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     </head>
     <style>
     body {

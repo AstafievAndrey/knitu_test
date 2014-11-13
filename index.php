@@ -14,9 +14,10 @@ foreach ($rating as $value) {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<title></title>
+<title>Тест</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 <link href="css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link href="css/dist/css/bootstrap.css" rel="stylesheet">
 <script src="js/jquery.min.js"></script>
 <script src="js/chart.min.js"></script>
