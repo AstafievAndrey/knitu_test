@@ -11,9 +11,8 @@ foreach ($rating as $value) {
 }
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-
 <title>Тест</title>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 <link href="css/style.css" rel="stylesheet">
