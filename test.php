@@ -13,6 +13,7 @@ Db::rightAutorize();
     </head>
     <body>
         <!--Основной блок-->
+        
         <div class="container">
             <form action="rating.php" style="max-width:600px;margin:0 auto;padding-top:50px;" method="post">
                 <?php
@@ -37,6 +38,7 @@ Db::rightAutorize();
                 <button type="submit" class="btn btn-sm btn-primary">Следующий</button>
             </form>
         </div>
+        <!--Основной блок-->
     </body>
 </html>
 
