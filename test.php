@@ -13,7 +13,6 @@ Db::rightAutorize();
     </head>
     <body>
         <!--Основной блок-->
-        
         <div class="container">
             <form action="rating.php" style="max-width:600px;margin:0 auto;padding-top:50px;" method="post">
                 <?php
