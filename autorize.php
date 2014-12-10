@@ -1,7 +1,7 @@
 <?php
 require 'class.php';
-if (isset($_POST['login']) && isset($_POST['pass'])){
+if (isset($_POST['login'])){
     $con = Db::getInstance();
-    $con->autorize($_POST['login'],$_POST['pass']);
+    $con->autorize($_POST['login']);
 }
 ?>

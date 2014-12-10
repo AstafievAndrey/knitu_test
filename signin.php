@@ -39,8 +39,7 @@
       }
       .form-signin input[type="text"] {
         margin-bottom: -1px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
+        border-radius: 0;
       }
       .form-signin input[type="password"] {
         margin-bottom: 10px;
@@ -61,10 +60,11 @@
         </div>-->
         <div class="container">
             <form class="form-signin" role="form" action="autorize.php" method="post">
-              <center><h4 class="form-signin-heading">Войти для тестирования</h4></center>
-              <input type="text" name="login" class="form-control" placeholder="Логин" required autofocus>
-              <input type="password" name="pass" class="form-control" placeholder="Пароль" required>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Начать</button>
+              <center><h4 class="form-signin-heading">Вход</h4></center>
+              <input type="text" name="login" class="form-control" placeholder="Фамилия" required autofocus>
+              <!--<input type="password" name="pass" class="form-control" placeholder="Пароль" required>-->
+              <br>
+              <button class="btn btn-lg btn-primary btn-block" type="submit" style="background:grey;">Начать</button>
             </form>
         </div>
     </body>

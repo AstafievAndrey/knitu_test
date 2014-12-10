@@ -34,6 +34,7 @@ class Db{
     }
     function saveRating($login,$rating){
         if ($rating<2) $rating=2;
+        $this->_db->exec('SET NAMES utf8');
         $sql="UPDATE Users SET rating=$rating WHERE login='$login'";
         $this->_db->exec($sql);
     }
@@ -44,10 +45,11 @@ class Db{
         $result = $sth->fetchall();
         return $result;
     }
-    function autorize($login,$pass){
-        $sql="select count(*) from Users where login='$login' and password='$pass'";
-        $aut=$this->_db->query($sql)->fetch(PDO::FETCH_NUM);
-        if ((int)$aut[0]==1) {
+    function autorize($login){
+        $this->_db->exec('SET NAMES utf8');
+        $sql="INSERT INTO Users (login) VALUES ('$login')";
+        $aut=$this->_db->exec($sql);
+        if ((int)$aut==1) {
             $_SESSION['aut']="yes";
             $_SESSION['rating']=0;
             $_SESSION['count']=0;
